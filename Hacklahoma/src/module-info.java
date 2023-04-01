@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author TubAL
- *
- */
-module Hacklahoma {
-}
