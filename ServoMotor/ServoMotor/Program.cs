@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         // Open the serial port for communication with the Arduino
-        SerialPort serialPort = new SerialPort("COM3", 9600);
+        SerialPort serialPort = new SerialPort("/dev/cu.usbmodem11401", 9600);
         serialPort.Open();
 
         // Set the initial position of the servo motor to 0 degrees
@@ -18,7 +18,6 @@ class Program
 
         // Define the sequence of letters to be translated
         string sequence = Console.ReadLine();
-
 
 
         // Loop through each letter in the sequence
@@ -61,8 +60,7 @@ class Program
 
                 default:
 
-                    targetPosition = 180;
-
+                    serialPort.write("180");
                     break;
 
             }
