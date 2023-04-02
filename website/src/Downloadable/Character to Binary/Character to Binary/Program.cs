@@ -1,4 +1,5 @@
-﻿using System.IO.Ports;
+﻿using System.Formats.Tar;
+using System.IO.Ports;
 namespace CharacterToBinary
 {
 
@@ -12,7 +13,7 @@ namespace CharacterToBinary
 
             port.Open();
 
-            Console.Write("Enter your sequence of letters you with to convert to braille:");
+            Console.Write("Enter your sequence of letters you with to convert to braille: ");
 
             string input = Console.ReadLine();
             
@@ -20,9 +21,11 @@ namespace CharacterToBinary
 
             foreach (byte b in bytesOfInput)
             {
-
+                
+                Console.Write("Test");
                 string binary = Convert.ToString(b, 2).PadLeft(8, '0');
                 port.Write(binary);
+                System.Threading.Thread.Sleep(3000);
 
             }
 
