@@ -12,15 +12,70 @@ class Program
         // Set the initial position of the servo motor to 0 degrees
         int currentPosition = 0;
 
+        // The position to where the motor will move to.
+        int targetPosition = 0;
+
+        // Promp user for input.
+        Console.Write("Enter the zone of where the blaster shots will be sent: ");
+
+
         // Define the sequence of letters to be translated
-        string sequence = "ABC";
+        string sequence = Console.ReadLine();
+
+
 
         // Loop through each letter in the sequence
         foreach (char letter in sequence)
         {
-            // Calculate the target position for the servo motor based on the current letter
-            int targetPosition = ((int)letter - 65) * 30;
 
+            if (letter == null)
+            {
+
+                currentPosition = 180;
+
+            }
+
+            // Calculate the target position for the servo motor based on the current letter
+            switch (char.ToLower(letter))
+            {
+
+                case 'a':
+
+                    targetPosition = 30;
+
+                    break;
+
+                case 'b':
+
+                    targetPosition = 60;
+
+                    break;
+
+                case 'c':
+
+                    targetPosition = 90;
+
+                    break;
+
+                case 'd':
+
+                    targetPosition = 120;
+
+                    break;
+
+                case 'e':
+
+                    targetPosition = 150;
+
+                    break;
+
+                default:
+
+                    targetPosition = 0;
+
+                    break;
+
+            }
             // Move the servo motor to the target position
             for (int i = currentPosition; i < targetPosition; i++)
             {
