@@ -12,9 +12,6 @@ class Program
         // Set the initial position of the servo motor to 0 degrees
         int currentPosition = 0;
 
-        // The position to where the motor will move to.
-        int targetPosition = 0;
-
         // Promp user for input.
         Console.Write("Enter the zone of where the blaster shots will be sent: ");
 
