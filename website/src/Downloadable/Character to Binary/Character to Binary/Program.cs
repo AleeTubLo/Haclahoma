@@ -22,7 +22,6 @@ namespace CharacterToBinary
             foreach (byte b in bytesOfInput)
             {
                 
-                Console.Write("Test");
                 string binary = Convert.ToString(b, 2).PadLeft(8, '0');
                 port.Write(binary);
                 System.Threading.Thread.Sleep(3000);
