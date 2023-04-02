@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iig94Y6qmY89EsCiMtF35govuh17gawmtdCKJMhIPPXukfOZdwZC2eqyw60vFR1TRPz9Z4YwxepHymMd5HSgNw==",
+  "dgSpecHash": "IHtJesQhoMcBUPckDi+PMpbqPbBeA+3xOrI7nFsa40PqnC94yfrZwZLkZC8uRVSPw6fpsmeDijJVLNMRmKJGrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TubAL\\OneDrive\\Desktop\\repo\\Character to Binary\\Character to Binary\\Character to Binary.csproj",
+  "projectFilePath": "C:\\Users\\TubAL\\OneDrive\\Desktop\\repo\\Hacklahoma\\website\\src\\Downloadable\\Character to Binary\\Character to Binary\\Character to Binary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TubAL\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
     "C:\\Users\\TubAL\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
