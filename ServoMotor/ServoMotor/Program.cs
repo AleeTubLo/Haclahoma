@@ -61,6 +61,10 @@ class Program
                 default:
 
                     serialPort.write("180");
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
                     break;
 
             }
