@@ -61,7 +61,7 @@ class Program
 
                 default:
 
-                    targetPosition = 180;
+                    serialPort.write("180");
 
                     break;
 
