@@ -9,7 +9,7 @@ namespace CharacterToBinary
         public static void Main(string[] args)
         {
 
-            SerialPort port = new SerialPort("COM5", 9600);
+            SerialPort port = new SerialPort("COM5", 9600); // "COM5" has to be changed based on which ports are being used by the arduino
 
             port.Open();
 
