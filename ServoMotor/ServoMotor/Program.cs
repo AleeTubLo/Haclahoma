@@ -28,64 +28,55 @@ class Program
         foreach (char letter in sequence)
         {
 
-            if (letter == null)
-            {
-
-                currentPosition = 180;
-
-            }
-
             // Calculate the target position for the servo motor based on the current letter
             switch (char.ToLower(letter))
             {
 
                 case 'a':
 
-                    targetPosition = 30;
+                    serialPort.write("30");
 
                     break;
 
                 case 'b':
 
-                    targetPosition = 60;
-
+                    serialPort.write("60");
+                    
                     break;
 
                 case 'c':
 
-                    targetPosition = 90;
+                    serialPort.write("90");
 
                     break;
 
                 case 'd':
 
-                    targetPosition = 120;
+                    serialPort.write("120");
 
                     break;
 
                 case 'e':
 
-                    targetPosition = 150;
+                    serialPort.write("150");
 
                     break;
 
                 default:
 
-                    targetPosition = 0;
+                    targetPosition = 180;
 
                     break;
 
             }
-            // Move the servo motor to the target position
-            for (int i = currentPosition; i < targetPosition; i++)
-            {
-                serialPort.Write(i.ToString());
-                currentPosition = i;
-                System.Threading.Thread.Sleep(15);
-            }
+
+            System.Threading.Thread.Sleep(1000);
+
         }
 
         // Close the serial port
         serialPort.Close();
+
     }
+
 }
